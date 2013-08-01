@@ -1,0 +1,7 @@
+#info
+title: FCC
+
+#build config
+server: true
+auto: true
+markdown: rdiscount
