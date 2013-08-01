@@ -1,1 +1,45 @@
-Header
+<!DOCTYPE html>
+<head>
+    <title>{{ site.title }} of the Federal Communications Commission</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="keywords" content="{{  }}">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="/testing-jekyll/css/bootstrap.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="/testing-jekyll/css/styles.css" media="screen"/>
+
+</head>
+
+<body>
+<div class="nav-wrapper">
+    <div id="header">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target="#main-nav">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                    
+                        <a class="brand" href="/fcc">FCC</a>
+                     
+                        <div class="nav-collapse collapse" id="main-nav">
+                            <ul class="nav pull-right">
+                                <li><a {% if page.nav == 'documents' %}class="active" {% endif %}href="#documents">Documents</a></li>
+                                <li><a {% if page.nav == 'licensing' %}class="active" {% endif %}href="#licensing">Licensing</a></li>
+                                <li><a {% if page.nav == 'auctions' %}class="active" {% endif %}href="/fcc/auctions">Auctions</a></li>
+                                <li><a {% if page.nav == 'topics' %}class="active" {% endif %}href="/fcc/topics/smartphone-security-checker/">Topics</a></li>
+                                <li><a {% if page.nav == 'data' %}class="active" {% endif %}href="/fcc/data">Data</a></li>
+                                <li class="pull-right"><a {% if page.nav == 'about' %}class="active" {% endif %}href="#about">About</a></li>
+                                <li class="pull-right"><a {% if page.nav == 'bureaus' %}class="active" {% endif %}href="/fcc/bureaus/omd">Bureaus &amp; Offices</a></li>
+                            </ul>
+                        </div>                 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
